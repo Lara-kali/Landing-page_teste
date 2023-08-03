@@ -1,0 +1,68 @@
+section.section-banner {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+section.section-banner .section-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 60vh;
+    height: 100%;
+    margin-left: 12rem;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    padding: 1.5rem .5rem;
+    max-width: 30vw;
+    width: 100%;
+}
+
+section.section-banner .section-text div {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+section.section-banner .section-text ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: georgian;
+}
+
+section.section-banner .section-text ul li {
+    margin: 1rem 0;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.05rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section.section-banner section.section-text button {
+    padding: 1rem 1.5rem;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    box-shadow: 0 0 1.2px white;
+}
+
+section .section-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
