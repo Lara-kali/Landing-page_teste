@@ -1,47 +1,55 @@
 section.section-about {
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 1.5rem 0;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 1.5rem 0;
 }
 
 section.section-about .section-text {
-    max-width: 50vw;
-    width: 100%;
-    min-height: 70vh;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5rem;
-    border: none;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    padding: 1.5rem;
+  max-width: 50vw;
+  width: 100%;
+  min-height: 70vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  padding: 1.5rem;
 }
 
 section.section-about .section-text div {
-    text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 section.section-about .section-text p {
-    padding: 1rem 2.5rem;
-    /* margin: 1rem 0; */
-    color: white;
-    font-size: 1.05rem;
-    font-family: 'Courier New', Courier, monospace;
+  padding: 1rem 2.5rem;
+  /* margin: 1rem 0; */
+  color: white;
+  font-size: 1.05rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 section.section-about .section-text button {
@@ -69,12 +77,12 @@ section.section-about .section-text button {
 
 section.section-about .section-text button::after,
 section.section-about .section-text button::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -99999;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 section.section-about .section-text button::before {

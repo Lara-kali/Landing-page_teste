@@ -5,7 +5,7 @@
 }
 
 header {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 header nav {
@@ -34,7 +34,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: antiquewhite;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 header nav button {
