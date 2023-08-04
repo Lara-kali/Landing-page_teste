@@ -14,13 +14,13 @@ main {
 main .title-main {
   color: antiquewhite;
   font-size: 2rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   margin: 1.5rem 0;
   padding: 1rem;
 }
 
-amin .splide__track {
-  padding: .5rem 1.5rem;
+main .splide__track {
+  padding: 0.5rem 1.5rem;
 }
 
 main .splide__slide img {
