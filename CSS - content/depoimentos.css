@@ -1,0 +1,33 @@
+.section-deploi {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-section-deploi {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+
+.content-deploi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.deploi {
+    background: silver;
+    padding: 1rem;
+    max-width: 400px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
