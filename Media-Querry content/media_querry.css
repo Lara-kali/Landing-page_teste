@@ -1,0 +1,107 @@
+@media only screen and (max-width:1500px) {
+    /* SECTION ABOUT US */
+
+    section.section-about {
+        padding: 1rem;
+    }
+
+    section.section-about .section-text div {
+        font-size: 1.5rem;
+    }
+
+    section.section-about .section-text {
+        max-width: 70vw;
+        padding: 1rem;
+    }
+
+    section.section-about .section-text p {
+        padding: .5rem;
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    /* SECTION BANNER */
+
+    section.section-banner {
+        flex-direction: column;
+    }
+
+    section.section-banner .section-text {
+        margin-left: 0;
+        display: block;
+        max-width: 100%;
+        min-height: 0;
+        z-index: 2;
+    }
+
+    section.section-banner .section-text ul {
+        padding: .5rem;
+        width: 100%;
+        text-align: justify;
+        margin: 0;
+    }
+
+    section.section-banner .section-text ul li {
+        font-size: 1rem;
+    }
+
+    section.section-banner section.section-text button {
+        display: none;
+    }
+
+    section.section-banner .section-img {
+        position: absolute;
+    }
+
+    /* SECTION CARD */
+
+    section.section-card {
+        padding: .5rem 1rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+    }
+
+    /* SECTION DEPOIMENTOS */
+
+    .title-section-deploi {
+        margin-top: 1rem;
+    }
+
+    .content-deploi {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:660px) {
+    /* SECTION ABOUT US */
+        section.section-about .section-text {
+            max-width: 100%;
+        }
+
+    /* SECTION CARD */
+
+    section.section-card .section-title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* SECTION DEPOIMENTOS */
+
+    .content-deploi {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .deploi {
+        max-width: 100%;
+        min-height: 250px;
+    }
+}

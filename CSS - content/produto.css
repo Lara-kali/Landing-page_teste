@@ -41,7 +41,7 @@ section.section-card .section-title {
         rgba(194, 194, 194, 0.9) 120%
       )
       #f0f0f0;
-  background-blend-mode: multiply, multiply;
+      background-blend-mode: overlay, darken, multiply, multiply;
   color: #232323;
   border: none;
   border-radius: 5.8px;
