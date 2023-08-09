@@ -66,6 +66,11 @@
         gap: .5rem;
     }
 
+    .card:nth-child(5),
+    .card:nth-child(6) {
+        display: none;
+    }
+
     /* SECTION DEPOIMENTOS */
 
     .title-section-deploi {
@@ -74,6 +79,10 @@
 
     .content-deploi {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .deploi:nth-last-child(-n+4) {
+        display: none;
     }
 }
 
