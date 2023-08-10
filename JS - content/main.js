@@ -5,9 +5,9 @@ $(document).ready(() => {
     },
     {
       collection_img: [
-        "Imagens/img-relogio2.png",
-        "Imagens/img-relogio3.png",
-        "Imagens/img-relogio4.png",
+        "Imagens/Slider/img-relogio2.png",
+        "Imagens/Slider/img-relogio3.png",
+        "Imagens/Slider/img-relogio4.png",
       ],
     },
   ];

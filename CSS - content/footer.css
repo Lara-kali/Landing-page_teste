@@ -4,7 +4,11 @@ footer.footer {
     justify-content: space-around;
     width: 100%;
     padding: .5rem;
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Courier New', Courier, monospace;
+    color: aqua;
 }
 
 footer.footer .title-footer {
@@ -22,44 +26,19 @@ footer.footer .content-link {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin: 0 .5rem;
+    width: 100%;
+    cursor: pointer;
 }
 
-.content-link li.item div {
-    position: absolute;
-    width: 0;
-    height: 0; /* Começa com altura zero */
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease, height 0.5s ease; /* Adicione a transição de altura */
-}
-
-.content-link li.item:hover div {
-    opacity: 1;
-    height: auto; /* Ajusta a altura automaticamente ao conteúdo */
-    width: auto;
-    margin-bottom: 2.5rem;
-    border-radius: 15px;
-    padding: 2.5px 5px;
-    color: white;
-}
-
-.content-link li.item div:nth-child(1) {
-    background-color: blue;
-}
-.content-link li.item div:nth-child(2) {
-    background-color: black;
-
-}
-.content-link li.item div:nth-child(3) {
-    background-color: blue;
-
-}
-.content-link li.item div:nth-child(4) {
-    background-color: red;
-
+.content-link li.item > div {
+    padding: .2rem;
+    z-index: 2;
 }
 
 .content-link li.item i {
     margin: 0 .5rem;
+    color: cadetblue;
+    transform: translateY(-10px) translateX(-20px) scale(1.5);
 }
 

@@ -55,6 +55,18 @@
         position: absolute;
     }
 
+    /* SECTION MAIN */
+
+    main {
+        justify-content: space-around;
+    }
+
+    main .title-main {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
     /* SECTION CARD */
 
     section.section-card {
@@ -87,6 +99,18 @@
 }
 
 @media only screen and (max-width:660px) {
+
+    /* HEADER */
+    header nav .title-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul,
+    .content-btn {
+        display: none;
+    }
+
     /* SECTION ABOUT US */
         section.section-about .section-text {
             max-width: 100%;
@@ -112,5 +136,18 @@
     .deploi {
         max-width: 100%;
         min-height: 250px;
+    }
+
+    /* SECTION FOOTER */
+
+    footer.footer {
+        flex-direction: column;
+    }
+
+    footer.footer .content-link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .2rem;
+        margin-top: 2.5rem;
     }
 }

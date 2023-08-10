@@ -15,7 +15,7 @@ $(document).ready(() => {
       item_btn: "venha comprar",
     },
     {
-      img_banner: ["Imagens/img-relogio1.png", "relogio tecnologico - banner"],
+      img_banner: ["Imagens/Banner/img-relogio1.png", "relogio tecnologico - banner"],
     },
   ];
 
