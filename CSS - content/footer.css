@@ -8,7 +8,7 @@ footer.footer {
 background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Courier New', Courier, monospace;
-    color: aqua;
+    color: antiquewhite;
 }
 
 footer.footer .title-footer {
@@ -38,7 +38,7 @@ footer.footer .content-link {
 
 .content-link li.item i {
     margin: 0 .5rem;
-    color: cadetblue;
+    color: #D6E4E5;
     transform: translateY(-10px) translateX(-20px) scale(1.5);
 }
 

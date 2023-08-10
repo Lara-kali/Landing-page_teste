@@ -49,7 +49,7 @@ $(document).ready(function () {
   // Iterar os itens dentro do objeto "cadastroBtn"
   for (let i = 0; i < navBar[2].cadastroBtn.length; i++) {
     // Criando o elemento button
-    var btn_navbar = $("<button>").addClass('glow-on-hover').text(navBar[2].cadastroBtn[i]);
+    var btn_navbar = $("<button>").addClass('btn btn-5').text(navBar[2].cadastroBtn[i]);
 
     // Atribuindo o elemento button ao elemento div
     content_btn.append(btn_navbar);
