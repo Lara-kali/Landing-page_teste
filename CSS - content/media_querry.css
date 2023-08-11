@@ -1,4 +1,9 @@
 @media only screen and (max-width:1500px) {
+    /* SECTION BANNER */
+    section.section-banner {
+        min-height: 70vh;
+    }
+
     /* SECTION ABOUT US */
 
     section.section-about {
@@ -30,29 +35,18 @@
 
     section.section-banner .section-text {
         margin-left: 0;
-        display: block;
+        flex-direction: column;
         max-width: 100%;
         min-height: 0;
         z-index: 2;
     }
 
-    section.section-banner .section-text ul {
-        padding: .5rem;
-        width: 100%;
-        text-align: justify;
-        margin: 0;
-    }
-
-    section.section-banner .section-text ul li {
-        font-size: 1rem;
-    }
-
-    section.section-banner section.section-text button {
-        display: none;
+    section.section-banner .section-text .content-input {
+        width: calc(100% - 20vw);
     }
 
     section.section-banner .section-img {
-        position: absolute;
+        display: none;    
     }
 
     /* SECTION MAIN */
@@ -111,10 +105,23 @@
         display: none;
     }
 
+    /* SECTION BANNER */
+    section.section-banner {
+        padding: 0 .5rem;
+    }
+
+    section.section-banner .section-text .title-banner {
+        margin-bottom: 1rem;
+    }
     /* SECTION ABOUT US */
-        section.section-about .section-text {
-            max-width: 100%;
-        }
+    section.section-about .section-text {
+        max-width: 100%;
+    }
+
+    /*  MAIN */
+    main {
+        padding: 0 1rem;
+    }
 
     /* SECTION CARD */
 

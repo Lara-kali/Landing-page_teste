@@ -1,18 +1,13 @@
 $(document).ready(() => {
   const banner = [
     {
-      title:
-        "O Futuro no Seu Pulso: Descubra o Relógio Tecnológico Definitivo!",
+      title: "O Futuro no Seu Pulso: Descubra o Relógio Tecnológico Definitivo!",
     },
     {
-      caracteristicas: [
-        "Tecnologia de ponta reunida em um elegante relógio que transcende o tempo.",
-        "Monitoramento avançado de saúde e atividades para uma vida mais inteligente e ativa.",
-        "Conectividade sem precedentes para sincronizar com seu estilo de vida digital.",
-      ],
+      placeholder: "O que está procurando?"
     },
     {
-      item_btn: "venha comprar",
+      btn_action: "pesquisar"
     },
     {
       img_banner: ["Imagens/Banner/img-relogio1.png", "relogio tecnologico - banner"],
@@ -25,13 +20,11 @@ $(document).ready(() => {
       $("<section>")
         .addClass("section-text")
         .append(
-          $("<div>").append(banner[0]["title"]),
-          $("<ul>").append(
-            $.map(banner[1]["caracteristicas"], function (i) {
-              return $("<li>").text(i);
-            })
-          ),
-          $("<button>").text(banner[2]["item_btn"])
+          $("<div>").addClass('title-banner').append(banner[0]["title"]),
+          $('<div>').addClass('content-input').append(
+            $('<input>').addClass('input-banner').attr('placeholder', banner[1]['placeholder']), // Adicionando o atributo placeholder
+            $('<span>').text(banner[2]['btn_action'])
+          )
         ),
 
       $("<section>")
@@ -40,3 +33,4 @@ $(document).ready(() => {
     )
     .appendTo("body");
 });
+
