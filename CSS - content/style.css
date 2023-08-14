@@ -7,7 +7,7 @@
 
 /* Cabeçalho */
 header {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background: var(--color-bg-body);
 }
 
 header nav {
@@ -55,7 +55,7 @@ header nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   background: black;
 }
 
@@ -71,7 +71,8 @@ header nav ul li a {
 
 .btn-5:hover {
   border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
   color: black;
@@ -89,13 +90,12 @@ body {
   /* variaveis Banner */
   --color-bg-body: #000000;
   --color-bg-section-depoimento: rgb(44, 51, 51);
-  --color-bg-section-about: #6D5D6E;
+  --color-bg-section-about: #6d5d6e;
   --color-bg-interna: rgb(14, 131, 136);
-  --color-text: #F6F1E9;
+  --color-text: #f6f1e9;
   --color-text-section_white: #000000;
 }
 
-  
 /* Seção Banner */
 section.section-banner {
   min-height: 100vh;
@@ -104,21 +104,6 @@ section.section-banner {
   justify-content: center;
   position: relative;
   background: #000000;
-}
-
-section.section-banner .section-text {
-  display: flex;
-  align-items: center;
-  flex-direction: column;  
-  justify-content: space-around;
-  min-height: 60vh;
-  margin-left: 5rem;
-  border: none;
-  border-radius: 5px;
-  background: transparent;
-  padding: 1.5rem 0.5rem;
-  min-width: 50vw;
-  width: 100%;
 }
 
 section.section-banner .section-text .title-banner {
@@ -130,27 +115,44 @@ section.section-banner .section-text .title-banner {
   margin-bottom: 1.5rem;
 }
 
+section.section-banner .section-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 60vh;
+  margin-left: 5rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  padding: 1.5rem 0.5rem;
+  min-width: 50vw;
+  width: 100%;
+}
+
 section.section-banner .section-text .content-input {
   display: flex;
+  max-width: 40vw;
   width: 100%;
   border-radius: 20px;
 }
 
 section.section-banner .section-text .input-banner {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 7px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   width: 100%;
 }
 
 section.section-banner .section-text span {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
   text-transform: uppercase;
   background: var(--color-bg-interna);
   color: white;
+  cursor: pointer;
 }
 
 section.section-banner .section-img img {
@@ -167,7 +169,7 @@ section.section-about {
   flex-direction: column;
   justify-content: center;
   padding: 1.5rem 0;
-  background: #F9F5F6;
+  background: #f9f5f6;
 }
 
 section.section-about .section-text {
@@ -295,7 +297,7 @@ main .splide__slide img {
   height: 100%;
   object-fit: cover;
 }
-  
+
 /* Seção de Cartões */
 section.section-card {
   min-height: 100vh;
@@ -344,7 +346,7 @@ section.section-card .section-title {
 .card-title {
   font-size: 1rem;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* Estilos para os botões */
@@ -352,7 +354,11 @@ section.section-card .section-title {
 .btn-card {
   position: relative;
   padding: 0.5rem 2rem;
-  background: linear-gradient(to right, var(--color-bg-section), var(--color-bg-section));
+  background: linear-gradient(
+    to right,
+    var(--color-bg-section),
+    var(--color-bg-section)
+  );
   border: none;
   border-radius: 5px;
   margin-top: 1rem;
@@ -437,7 +443,7 @@ section.section-card .section-footer button {
 
 .content-deploi {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 1rem 1.5rem;
 }
@@ -486,7 +492,7 @@ footer.footer {
   width: 100%;
   padding: 0.5rem;
   background: #232526;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 footer.footer .title-footer {
@@ -504,18 +510,18 @@ footer.footer .content-link {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   width: 100%;
   cursor: pointer;
 }
 
 .content-link li.item > div {
-  padding: .2rem;
+  padding: 0.2rem;
   z-index: 2;
 }
 
 .content-link li.item i {
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   transform: translateY(-10px) translateX(-20px) scale(1.5);
 }
 

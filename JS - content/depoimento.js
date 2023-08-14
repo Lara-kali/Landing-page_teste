@@ -12,18 +12,6 @@ $(document).ready(() => {
           deploi: "Os relógios desta marca são mais do que meros acessórios. Eles são verdadeiras obras de arte que me ajudam a manter o ritmo no mundo agitado do marketing digital. Estilo e funcionalidade em um só relógio."
         },
         {
-          image: "Imagens/customers/SOPHIA_MARTINEZ.jpg",
-          name_person: "Sophia Martinez",
-          profission: "Advogada de Direitos Humanos",
-          deploi: "Como advogada, preciso gerenciar meu tempo de forma eficiente. Os relógios desta marca não apenas me auxiliam nisso, mas também adicionam um toque de elegância que combina com meu compromisso em defender a justiça."
-        },
-        {
-          image: "Imagens/customers/DAVID_WALKER.jpg",
-          name_person: "David Walker",
-          profission: "Astrônomo Amador",
-          deploi: "Cada segundo conta quando você está observando as estrelas. Os relógios dessa marca não só têm um design celestial, mas também a precisão necessária para acompanhar o movimento dos corpos celestes."
-        },
-        {
           image: "Imagens/customers/EMILY_BENNETT.jpg",
           name_person: "Emily Bennett",
           profission: "Chef Confeiteira",
