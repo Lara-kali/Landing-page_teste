@@ -1,0 +1,177 @@
+@media only screen and (max-width: 1500px) {
+  /* SECTION BANNER */
+  section.section-banner {
+    min-height: 70vh;
+  }
+
+  /* SECTION ABOUT US */
+
+  section.section-about {
+    padding: 1rem;
+  }
+
+  section.section-about .section-text div {
+    font-size: 1.5rem;
+  }
+
+  section.section-about .section-text {
+    max-width: 70vw;
+    padding: 1rem;
+  }
+
+  section.section-about .section-text p {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  /* SECTION BANNER */
+
+  section.section-banner {
+    flex-direction: column;
+  }
+
+  section.section-banner .section-text .title-banner {
+    padding: 0.5rem 1rem;
+  }
+
+  section.section-banner .section-text {
+    margin-left: 0;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 0;
+    z-index: 2;
+  }
+
+  section.section-banner .section-text .content-input {
+    max-width: calc(70vw - 20vw);
+    width: calc(100% - 20vw);
+  }
+
+  section.section-banner .section-img {
+    display: none;
+  }
+
+  /* SECTION MAIN */
+
+  main {
+    justify-content: space-around;
+  }
+
+  main .title-main {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  /* SECTION CARD */
+
+  section.section-card {
+    padding: 0.5rem 1rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .card:nth-child(5),
+  .card:nth-child(6) {
+    display: none;
+  }
+
+  /* SECTION DEPOIMENTOS */
+
+  .title-section-deploi {
+    margin-top: 1rem;
+  }
+
+  .content-deploi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .deploi:nth-last-child(-n + 4) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  /* HEADER */
+  header nav .title-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul,
+  .content-btn {
+    display: none;
+  }
+
+  /* SECTION BANNER */
+  section.section-banner {
+    padding: 0 0.3rem;
+  }
+
+  section.section-banner .section-text .content-input {
+    max-width: calc(100vw - 2vw);
+    width: 100%;
+  }
+
+  section.section-banner .section-text .title-banner {
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+  }
+  /* SECTION ABOUT US */
+  section.section-about .section-text {
+    max-width: 100%;
+  }
+
+  /* SECTION ABOUT */
+  section.section-about .section-text {
+    max-width: calc(100vw - 2vw);
+    padding: 0;
+    line-height: 1.5rem;
+    /* text-align: justify; */
+  }
+
+  /*  MAIN */
+  main {
+    padding: 0 1rem;
+  }
+
+  /* SECTION CARD */
+
+  section.section-card .section-title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* SECTION DEPOIMENTOS */
+
+  .content-deploi {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .deploi {
+    max-width: 100%;
+    min-height: 250px;
+  }
+
+  /* SECTION FOOTER */
+
+  footer.footer {
+    flex-direction: column;
+  }
+
+  footer.footer .content-link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2rem;
+    margin-top: 2.5rem;
+  }
+}
