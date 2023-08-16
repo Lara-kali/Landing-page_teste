@@ -206,7 +206,7 @@ $(document).ready(() => {
             $("<section>")
                 .addClass("section-footer")
                 .append(
-                    $("<button>").addClass("btn-btn-one").text(product[1]["btn_cta"])
+                    $("<button>").addClass("btn-card btn-one").text(product[1]["btn_cta"])
                 )
         )
         .appendTo("body");
