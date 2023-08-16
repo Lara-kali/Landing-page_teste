@@ -1,28 +1,24 @@
-/* MEDIA QUERY: MAX WIDTH 1500PX */
 @media only screen and (max-width: 1500px) {
   /* SECTION BANNER */
   section.section-banner {
     min-height: 70vh;
   }
-
   /* SECTION ABOUT US */
   section.section-about {
     padding: 1rem;
   }
-  section.section-about .section-text div {
-    font-size: 1.5rem;
-  }
   section.section-about .section-text {
     max-width: 70vw;
     padding: 1rem;
+  }
+  section.section-about .section-text div {
+    font-size: 1.5rem;
   }
   section.section-about .section-text p {
     padding: 0.5rem;
     font-size: 0.9rem;
   }
 }
-
-/* MEDIA QUERY: MAX WIDTH 1000PX */
 @media only screen and (max-width: 1000px) {
   /* SECTION BANNER */
   section.section-banner {
@@ -39,13 +35,12 @@
     z-index: 2;
   }
   section.section-banner .section-text .content-input {
-    max-width: calc(70vw - 20vw);
+    max-width: 50vw;
     width: calc(100% - 20vw);
   }
   section.section-banner .section-text .title-banner {
     padding: 0.5rem 1rem;
   }
-
   /* SECTION MAIN */
   main {
     justify-content: space-around;
@@ -55,97 +50,84 @@
     text-transform: uppercase;
     font-size: 1.5rem;
   }
-
   /* SECTION CARD */
   section.section-card {
     padding: 0.5rem 1rem;
   }
-  .card-container {
+  section.section-card .card-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
   }
-  .card:nth-child(5),
-  .card:nth-child(6) {
+  section.section-card .card-container .card:nth-child(5),
+  section.section-card .card-container .card:nth-child(6) {
     display: none;
   }
-
   /* SECTION DEPOIMENTOS */
-  .title-section-deploi {
+  .section-deploi .title-section-deploi {
     margin-top: 1rem;
   }
-  .content-deploi {
+  .section-deploi .content-deploi {
     grid-template-columns: repeat(1, 1fr);
   }
-  .deploi:nth-last-child(-n + 2) {
+  .section-deploi .content-deploi .deploi {
+    max-width: 100vw;
+  }
+  .section-deploi .content-deploi .deploi:nth-last-child(-n+2) {
     display: none;
   }
 }
-
-/* MEDIA QUERY: MAX WIDTH 660PX */
 @media only screen and (max-width: 660px) {
-  /* HEADER */
   .section-header .title-header {
     width: 100%;
     text-align: center;
   }
-  .section-header ul,
-  .section-header .container-btn {
+  .section-header .container-btn,
+  .section-header ul {
     display: none;
   }
-
   /* SECTION BANNER */
   section.section-banner {
     padding: 0 0.3rem;
   }
   section.section-banner .section-text .content-input {
-    max-width: calc(100vw - 2vw);
+    max-width: 98vw;
     width: 100%;
   }
   section.section-banner .section-text .title-banner {
     margin-bottom: 1rem;
     padding: 0.2rem;
   }
-
-  /* SECTION ABOUT US */
   section.section-about .section-text {
-    max-width: 100%;
-  }
-
-  /* SECTION ABOUT */
-  section.section-about .section-text {
-    max-width: calc(100vw - 2vw);
+    max-width: 98vw;
     padding: 0;
     line-height: 1.5rem;
   }
-
   /* MAIN */
   main {
     padding: 0 1rem;
   }
-
   /* SECTION CARD */
   section.section-card .section-title {
     text-align: center;
     text-transform: uppercase;
   }
-  .card-container {
+  section.section-card .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
-
   /* SECTION DEPOIMENTOS */
-  .content-deploi {
+  .section-deploi .content-deploi {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 0.2rem;
+    margin-top: 2.5rem;
   }
-  .deploi {
-    max-width: 100%;
-    min-height: 250px;
+  .section-deploi .content-deploi .deploi {
+    max-width: 98vw;
     flex-direction: column;
   }
-  .deploi img {
-    width: calc(100% - 0vw);
-    height: 35vh;
+  .section-deploi .content-deploi .deploi img {
+    width: 65vw;
   }
-
   /* SECTION FOOTER */
   footer.footer {
     flex-direction: column;
@@ -156,4 +138,4 @@
     gap: 0.2rem;
     margin-top: 2.5rem;
   }
-}
+}/*# sourceMappingURL=media-querry.css.map */
