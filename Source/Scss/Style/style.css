@@ -186,8 +186,7 @@ section.section-banner .section-img img {
   text-transform: uppercase;
   margin-top: 1rem;
 }
-.section-about .section-text button::after,
-.section-about .section-text button::before {
+.section-about .section-text button::after, .section-about .section-text button::before {
   content: "";
   position: absolute;
   bottom: 0;
