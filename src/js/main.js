@@ -38,7 +38,7 @@ $(document).ready(() => {
             btn_action: "pesquisar"
         },
         {
-            img_banner: ["Assets/Imagens/Banner/img-relogio1.png", "relogio tecnologico - banner"],
+            img_banner: ["Src/Imagens/Banner/img-relogio1.png", "relogio tecnologico - banner"],
         },
     ];
 
@@ -57,7 +57,7 @@ $(document).ready(() => {
 
             $("<section>")
                 .addClass("section-img")
-                .append($("<img>").attr("src", banner[3]["img_banner"][0]))
+                .append($("<img>").attr("Src", banner[3]["img_banner"][0]))
         ).appendTo("body");
 
     // SECTION ABOUT US
@@ -98,9 +98,9 @@ $(document).ready(() => {
         },
         {
             collection_img: [
-                "Assets/Imagens/Slider/img-relogio2.png",
-                "Assets/Imagens/Slider/img-relogio3.png",
-                "Assets/Imagens/Slider/img-relogio4.png",
+                "Src/Imagens/Slider/img-relogio2.png",
+                "Src/Imagens/Slider/img-relogio3.png",
+                "Src/Imagens/Slider/img-relogio4.png",
             ],
         },
     ];
@@ -123,7 +123,7 @@ $(document).ready(() => {
                                     $.map(carrousel[1]["collection_img"], function (i) {
                                         return $("<li>")
                                             .addClass("splide__slide")
-                                            .append($("<img>").attr("src", i));
+                                            .append($("<img>").attr("Src", i));
                                     })
                                 )
                         )
@@ -142,32 +142,32 @@ $(document).ready(() => {
                 {
                     title_card: "AstraTime",
                     subtitle_card: "Celestial Chrono",
-                    imagem: "Assets/Imagens/img_dos_produtos/RelogioP.1.png",
+                    imagem: "Src/Imagens/img_dos_produtos/RelogioP.1.png",
                 },
                 {
                     title_card: "ChronoTech",
                     subtitle_card: "Nexus Timekeeper",
-                    imagem: "Assets/Imagens/img_dos_produtos/RelogioP.2.png",
+                    imagem: "Src/Imagens/img_dos_produtos/RelogioP.2.png",
                 },
                 {
                     title_card: "LuminaWatches",
                     subtitle_card: "Aurora Vanguard",
-                    imagem: "Assets/Imagens/img_dos_produtos/RelogioP.3.png",
+                    imagem: "Src/Imagens/img_dos_produtos/RelogioP.3.png",
                 },
                 {
                     title_card: "TemporalX",
                     subtitle_card: "Eon Navigator",
-                    imagem: "Assets/Imagens/img_dos_produtos/RelogioP.4.png",
+                    imagem: "Src/Imagens/img_dos_produtos/RelogioP.4.png",
                 },
                 {
                     title_card: "HorizonTimepieces",
                     subtitle_card: "Lumina Horizon",
-                    imagem: "Assets/Imagens/img_dos_produtos/RelogioP.5.png",
+                    imagem: "Src/Imagens/img_dos_produtos/RelogioP.5.png",
                 },
                 {
                     title_card: "AstralWatches",
                     subtitle_card: "Stellar Chronograph",
-                    imagem: "Assets/Imagens/img_dos_produtos/RelogioP.6.png",
+                    imagem: "Src/Imagens/img_dos_produtos/RelogioP.6.png",
                 },
             ],
         },
@@ -191,7 +191,7 @@ $(document).ready(() => {
                                     .addClass("card-image")
                                     .append(
                                         $("<img>")
-                                            .attr("src", i["imagem"])
+                                            .attr("Src", i["imagem"])
                                             .addClass("image-responsive")
                                     ),
                                 $("<div>")
@@ -219,25 +219,25 @@ $(document).ready(() => {
         {
             collection_deploi: [
                 {
-                    image: "Assets/Imagens/customers/JOHN_ANDERSON.jpg",
+                    image: "Src/Imagens/customers/JOHN_ANDERSON.jpg",
                     name_person: "John Anderson",
                     profission: "Profissional de Marketing Digital",
                     deploi: "Os relógios desta marca são mais do que meros acessórios. Eles são verdadeiras obras de arte que me ajudam a manter o ritmo no mundo agitado do marketing digital. Estilo e funcionalidade em um só relógio."
                 },
                 {
-                    image: "Assets/Imagens/customers/EMILY_BENNETT.jpg",
+                    image: "Src/Imagens/customers/EMILY_BENNETT.jpg",
                     name_person: "Emily Bennett",
                     profission: "Chef Confeiteira",
                     deploi: "Na confeitaria, a precisão é a chave para criar obras-primas doces. Estes relógios me mantêm no tempo exato para criar sobremesas perfeitas e belas, assim como eles."
                 },
                 {
-                    image: "Assets/Imagens/customers/MICHAEL_TURNER.jpg",
+                    image: "Src/Imagens/customers/MICHAEL_TURNER.jpg",
                     name_person: "Michael Turner",
                     profission: "Atleta Profissional de Triatlo",
                     deploi: "Cruzar a linha de chegada em triatlos exige disciplina e resistência. Estes relógios são mais do que um contador de tempo; eles são parceiros confiáveis que me ajudam a superar meus limites."
                 },
                 {
-                    image: "Assets/Imagens/customers/ISABELLA_RAMIREZ.jpg",
+                    image: "Src/Imagens/customers/ISABELLA_RAMIREZ.jpg",
                     name_person: "Isabella Ramirez",
                     profission: "Artista Visual",
                     deploi: "Assim como minhas obras de arte, esses relógios são uma expressão de estilo e originalidade. Eles me inspiram a criar e a manter um ritmo criativo, independentemente do momento."
@@ -251,7 +251,7 @@ $(document).ready(() => {
         $('<section>').addClass('content-deploi').append(
             $.map(depoimentos[1]["collection_deploi"], function (i) {
                 return $('<div>').addClass('deploi').append(
-                    $('<img>').attr('src', i['image']),
+                    $('<img>').attr('Src', i['image']),
                     $('<section>').addClass('info').append(
                         $('<div>').addClass('name').text(i['name_person']),
                         $('<div>').addClass('profission').text(i['profission']),
