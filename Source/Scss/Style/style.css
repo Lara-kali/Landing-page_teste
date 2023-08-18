@@ -47,8 +47,7 @@ body {
 }
 .section-header .btn-5:hover {
   border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
-    0 0 20px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
   color: black;
@@ -125,7 +124,7 @@ section.section-banner .section-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .section-about {
@@ -181,14 +180,13 @@ section.section-banner .section-img img {
   justify-content: center;
   white-space: nowrap;
   -moz-user-select: none;
-  user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   text-transform: uppercase;
   margin-top: 1rem;
 }
-.section-about .section-text button::after,
-.section-about .section-text button::before {
+.section-about .section-text button::after, .section-about .section-text button::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -251,7 +249,7 @@ main .splide__track .splide__slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 section.section-card {
@@ -446,4 +444,4 @@ footer.footer .content-link li.item div {
 footer.footer .content-link li.item i {
   margin: 0 0.5rem;
   transform: translateY(-10px) translateX(-20px) scale(1.5);
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
