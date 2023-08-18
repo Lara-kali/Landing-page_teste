@@ -154,6 +154,10 @@
 
   /* SECTION DEPOIMENTOS */
   .section-deploi {
+    .title-section-deploi {
+      font-size: calc(2.5rem - 1rem);
+    }
+
     .content-deploi {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
