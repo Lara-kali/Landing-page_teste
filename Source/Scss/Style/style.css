@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #000000;
+  background: #ffffff;
 }
 
 .section-header {
@@ -73,8 +73,8 @@ section.section-banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  background: #000000;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 section.section-banner .section-text {
   display: flex;
@@ -82,7 +82,6 @@ section.section-banner .section-text {
   flex-direction: column;
   justify-content: space-around;
   min-height: 60vh;
-  margin-left: 5rem;
   border: none;
   border-radius: 5px;
   background: transparent;
@@ -97,6 +96,8 @@ section.section-banner .section-text .title-banner {
   text-align: center;
   color: #f6f1e9;
   margin-bottom: 1.5rem;
+  max-width: 30vw;
+  width: 100%;
 }
 section.section-banner .section-text .content-input {
   display: flex;
@@ -234,13 +235,15 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 0 5rem;
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 0%, #dcdcdc 100%);
 }
 main .title-main {
   font-size: 2rem;
   font-family: "Courier New", Courier, monospace;
   margin: 1.5rem 0;
   padding: 1rem;
-  color: #f6f1e9;
+  color: #000000;
 }
 main .splide__track {
   padding: 0.5rem 1.5rem;
@@ -266,7 +269,7 @@ section.section-card .section-title {
   font-family: "Courier New", Courier, monospace;
   padding: 1rem;
   margin: 1rem 0;
-  color: #f6f1e9;
+  color: #000000;
 }
 section.section-card .card-container {
   display: grid;
@@ -279,6 +282,8 @@ section.section-card .card-container .card {
   border-radius: 5.8px;
   opacity: 0.95;
   color: #000000;
+  background: silver;
+  opacity: 0.8;
 }
 section.section-card .card-container .card .card-image {
   width: 100%;
@@ -353,14 +358,14 @@ section.section-card .section-footer {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: rgb(44, 51, 51);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .section-deploi .title-section-deploi {
   text-align: center;
   font-size: 2.5rem;
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
-  color: antiquewhite;
+  color: #000000;
 }
 .section-deploi .content-deploi {
   display: grid;
@@ -397,18 +402,18 @@ section.section-card .section-footer {
   text-transform: uppercase;
   font-size: 1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #f6f1e9;
+  color: #000000;
 }
 .section-deploi .content-deploi .deploi .info .profission {
   font-size: 0.7rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  color: #f6f1e9;
+  color: #000000;
 }
 .section-deploi .content-deploi .deploi .info .text {
   text-align: justify;
   /* padding: .2rem; */
-  color: silver;
+  color: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 footer.footer {

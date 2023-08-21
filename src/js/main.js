@@ -25,6 +25,7 @@ fetch('src/js/data_json/dados.json')
 
     $("<section>")
         .addClass("section-banner")
+        .css("background-image", 'url("src/Imagens/Banner/immmmm.jpg")')
         .append(
             $("<section>")
                 .addClass("section-text")
@@ -34,11 +35,7 @@ fetch('src/js/data_json/dados.json')
                         $('<input>').addClass('input-banner').attr('placeholder', banner_data[1]['placeholder']), // Adicionando o atributo placeholder
                         $('<span>').text(banner_data[2]['btn_action'])
                     )
-                ),
-
-            $("<section>")
-                .addClass("section-img")
-                .append($("<img>").attr("src", banner_data[3]["img_banner"][0]))
+                )
         ).appendTo("body");
 
     // SECTION ABOUT US
@@ -95,6 +92,7 @@ fetch('src/js/data_json/dados.json')
     const produto_data = data[4]
 
     $("<section>")
+        .css("background-image", 'url("src/Imagens/Banner/cool-background (2).png")')
         .addClass("section-card")
         .append(
             $("<section>").addClass("section-title").text("Confira nossos produtos"),
