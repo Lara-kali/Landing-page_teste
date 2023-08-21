@@ -18,7 +18,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background: rgba(1, 1, 1, 0.7);
 }
 .section-header .title-header {
   font-size: 1.5rem;
@@ -98,6 +97,7 @@ section.section-banner .section-text .title-banner {
   font-size: 1.5rem;
   text-align: center;
   color: #f6f1e9;
+  text-shadow: 0 2px 8px #000000;
   margin-bottom: 1.5rem;
   max-width: 30vw;
   width: 100%;
@@ -238,8 +238,6 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 0 5rem;
-  background-color: #ffffff;
-  background-image: linear-gradient(0deg, #ffffff 0%, #dcdcdc 100%);
 }
 main .title-main {
   font-size: 2rem;

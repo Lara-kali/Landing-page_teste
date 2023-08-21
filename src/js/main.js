@@ -10,7 +10,7 @@ fetch('src/js/data_json/dados.json')
             // SECTION HEADER
         $('<section>')
             .addClass('section_banner-and-navbar')
-            .css("background-image", 'url("src/Imagens/Banner/immmmm.jpg")')
+            .css("background-image", 'url("src/Imagens/Banner/immmmm(2).jpg")')
             .append(
             $('<header>').addClass('section-header').append(
                 $('<section>').addClass('title-header').text(nav_bar_data[0]['title']),
@@ -64,6 +64,7 @@ fetch('src/js/data_json/dados.json')
     const carousel_data = data[3]
 
     $("<main>")
+        .css('background-image', 'url("src/Imagens/Banner/cool-background (8).png")')
         .append(
             $("<section>").append(
                 $("<div>").addClass("title-main").text(carousel_data[0]["title"])
