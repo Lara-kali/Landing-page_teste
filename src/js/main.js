@@ -2,41 +2,46 @@ $(document).ready(() => {
 fetch('src/js/data_json/dados.json')
     .then(response => response.json())
     .then(data => {
+
+        const nav_bar_data = data[0];
+
+        const banner_data = data[1];
+
             // SECTION HEADER
-    const nav_bar_data = data[0];
-
-    $('<header>').addClass('section-header').append(
-        $('<section>').addClass('title-header').text(nav_bar_data[0]['title']),
-        $('<ul>').append(
-            $.map(nav_bar_data[1]['link'], function (i) {
-                return $('<li>').addClass('ul-li-header').text(i)
-            })
-        ),
-        $('<section>').addClass('container-btn').append(
-            $.map(nav_bar_data[2]['cadastroBtn'], function (i) {
-                return $('<button>').addClass('btn btn-5').text(i)
-            })
-        )
-    ).appendTo('body');
-
-    // SECTION BANNER
-
-    const banner_data = data[1]
-
-    $("<section>")
-        .addClass("section-banner")
-        .css("background-image", 'url("src/Imagens/Banner/immmmm.jpg")')
-        .append(
-            $("<section>")
-                .addClass("section-text")
-                .append(
-                    $("<div>").addClass('title-banner').append(banner_data[0]["title"]),
-                    $('<div>').addClass('content-input').append(
-                        $('<input>').addClass('input-banner').attr('placeholder', banner_data[1]['placeholder']), // Adicionando o atributo placeholder
-                        $('<span>').text(banner_data[2]['btn_action'])
-                    )
+        $('<section>')
+            .addClass('section_banner-and-navbar')
+            .css("background-image", 'url("src/Imagens/Banner/immmmm.jpg")')
+            .append(
+            $('<header>').addClass('section-header').append(
+                $('<section>').addClass('title-header').text(nav_bar_data[0]['title']),
+                $('<ul>').append(
+                    $.map(nav_bar_data[1]['link'], function (i) {
+                        return $('<li>').addClass('ul-li-header').text(i)
+                    })
+                ),
+                $('<section>').addClass('container-btn').append(
+                    $.map(nav_bar_data[2]['cadastroBtn'], function (i) {
+                        return $('<button>').addClass('btn btn-5').text(i)
+                    })
                 )
-        ).appendTo("body");
+            ),
+        
+            // SECTION BANNER
+                
+            $("<section>")
+                .addClass("section-banner")
+                .append(
+                    $("<section>")
+                        .addClass("section-text")
+                        .append(
+                            $("<div>").addClass('title-banner').append(banner_data[0]["title"]),
+                            $('<div>').addClass('content-input').append(
+                                $('<input>').addClass('input-banner').attr('placeholder', banner_data[1]['placeholder']), // Adicionando o atributo placeholder
+                                $('<button>').addClass('btn-4').text(banner_data[2]['btn_action'])
+                            )
+                        )
+                )
+        ).appendTo('body')
 
     // SECTION ABOUT US
     const about_data = data[2]

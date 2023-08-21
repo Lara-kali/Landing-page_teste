@@ -20,12 +20,17 @@ body {
   background: $bg-color-all;
 }
 
+.section_banner-and-navbar {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .section-header {
-  background: $second-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: .5rem 1rem;
+  background: rgba(1,1,1, .7);
 
   .title-header {
     font-size: 1.5rem;
@@ -94,8 +99,6 @@ section.section-banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 
   .section-text {
     display: flex;
@@ -135,12 +138,12 @@ section.section-banner {
         width: 100%;
       }
 
-      span {
+      .btn-4 {
         padding: 0.5rem 1rem;
         border: none;
         border-radius: 4px;
         text-transform: uppercase;
-        background: $color-btn;
+        background: rgba(1,1,1, .7);
         color: $primary-color;
         cursor: pointer;
       }
@@ -485,8 +488,9 @@ footer.footer {
   justify-content: space-around;
   width: 100%;
   padding: 0.5rem;
-  background: #232526;
+  background: rgba(1,1,1,.8);
   font-family: "Courier New", Courier, monospace;
+  color: $primary-color;
 
   .title-footer {
     font-size: 1.5rem;
