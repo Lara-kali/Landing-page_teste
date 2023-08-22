@@ -11,6 +11,7 @@ body {
 .section_banner-and-navbar {
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .section-header {
@@ -88,8 +89,6 @@ section.section-banner .section-text {
   border-radius: 5px;
   background: transparent;
   padding: 1.5rem 0.5rem;
-  min-width: 50vw;
-  width: 100%;
 }
 section.section-banner .section-text .title-banner {
   text-transform: uppercase;
@@ -99,8 +98,6 @@ section.section-banner .section-text .title-banner {
   color: #f6f1e9;
   text-shadow: 0 2px 8px #000000;
   margin-bottom: 1.5rem;
-  max-width: 30vw;
-  width: 100%;
 }
 section.section-banner .section-text .content-input {
   display: flex;
@@ -141,8 +138,6 @@ section.section-banner .section-img img {
   background: #f9f5f6;
 }
 .section-about .section-text {
-  max-width: 70vw;
-  width: 100%;
   min-height: 70vh;
   height: 100%;
   display: flex;
@@ -278,6 +273,9 @@ section.section-card .card-container {
   gap: 1.5rem;
 }
 section.section-card .card-container .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 1.2rem;
   border: none;
   border-radius: 5.8px;
@@ -285,16 +283,16 @@ section.section-card .card-container .card {
   color: #000000;
   background: silver;
   opacity: 0.8;
-}
-section.section-card .card-container .card .card-image {
+  max-width: 25vw;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-section.section-card .card-container .card .card-image .image-responsive {
+section.section-card .card-container .card .card-body {
+  flex: none;
+}
+section.section-card .card-container .card .card-img-top {
   display: block;
-  max-height: 250px;
+  max-height: 290px;
+  height: 100%;
   max-width: 100%;
   padding: 0.5rem;
 }

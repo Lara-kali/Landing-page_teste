@@ -28,7 +28,7 @@ $(document).ready(() => {
                         .addClass("section-banner")
                         .append(
                             $("<section>")
-                                .addClass("section-text")
+                                .addClass("section-text container")
                                 .append(
                                     $("<div>").addClass('title-banner').append(banner_data[0]["title"]),
                                     $('<div>').addClass('content-input').append(
@@ -46,7 +46,7 @@ $(document).ready(() => {
                 .addClass("section-about")
                 .append(
                     $("<section>")
-                        .addClass("section-text")
+                        .addClass("section-text container")
                         .append(
                             $("<div>").text(about_data[0]["title"]),
                             $.map(about_data[1]["paragrafo"], (i) => $('<p>').text(i)),
@@ -62,29 +62,9 @@ $(document).ready(() => {
                 .append(
                     $("<section>").append(
                         $("<div>").addClass("title-main").text(carousel_data[0]["title"])
-                    ),
-                    $("<section>")
-                        .addClass("splide")
-                        .attr("id", "image-carousel")
-                        .append(
-                            $("<div>")
-                                .addClass("splide__track")
-                                .append(
-                                    $("<ul>")
-                                        .addClass("splide__list")
-                                        .append(
-                                            $.map(carousel_data[1]["collection_img"], (i) => $("<li>")
-                                                    .addClass("splide__slide")
-                                                    .append($("<img>").attr("src", i)))
-                                        )
-                                )
-                        )
+                    )
                 )
                 .appendTo("body");
-
-            new Splide("#image-carousel", {
-                heightRatio: 0.5,
-            }).mount();
 
             // SECTION PRODUTOS
             const produto_data = data[4]
@@ -100,18 +80,14 @@ $(document).ready(() => {
                             $.map(produto_data[0]["collection_card"], (i) => $('<div>')
                                     .addClass("card")
                                     .append(
+                                        $("<img>")
+                                            .attr("src", i["imagem"])
+                                            .addClass("card-img-top"),
                                         $("<div>")
-                                            .addClass("card-image")
-                                            .append(
-                                                $("<img>")
-                                                    .attr("src", i["imagem"])
-                                                    .addClass("image-responsive")
-                                            ),
-                                        $("<div>")
-                                            .addClass("card-header")
+                                            .addClass("card-body")
                                             .append(
                                                 $("<div>").addClass("card-title").text(i["title_card"]),
-                                                $('<div>').addClass('card-subtitle').text(i['subtitle_card'])
+                                                $('<div>').addClass('card-text').text(i['subtitle_card'])
                                             )
                                     )
                             )

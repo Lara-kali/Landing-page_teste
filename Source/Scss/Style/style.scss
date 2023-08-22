@@ -22,6 +22,7 @@ body {
 .section_banner-and-navbar {
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .section-header {
@@ -108,8 +109,6 @@ section.section-banner {
     border-radius: 5px;
     background: transparent;
     padding: 1.5rem 0.5rem;
-    min-width: 50vw;
-    width: 100%;
 
     .title-banner {
       text-transform: uppercase;
@@ -119,8 +118,6 @@ section.section-banner {
       color: $primary-color;
       text-shadow: 0 2px 8px $second-color;
       margin-bottom: 1.5rem;
-      max-width: 30vw;
-      width: 100%;
     }
 
     .content-input {
@@ -168,8 +165,6 @@ section.section-banner {
   background: #f9f5f6;
 
   .section-text {
-    max-width: 70vw;
-    width: 100%;
     min-height: 70vh;
     height: 100%;
     display: flex;
@@ -317,6 +312,9 @@ section.section-card {
     gap: 1.5rem;
 
     .card {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
       padding: 1.2rem;
       border: none;
       border-radius: 5.8px;
@@ -324,19 +322,19 @@ section.section-card {
       color: $second-color;
       background: $third-color;
       opacity: 0.8;
+      max-width: 25vw;
+      width: 100%;
 
-      .card-image {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .card-body {
+        flex: none;
+      }
 
-        .image-responsive {
-          display: block;
-          max-height: 250px;
-          max-width: 100%;
-          padding: 0.5rem;
-        }
+      .card-img-top {
+        display: block;
+        max-height: 290px;
+        height: 100%;
+        max-width: 100%;
+        padding: 0.5rem;
       }
 
       .card-title {
