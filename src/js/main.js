@@ -15,14 +15,10 @@ $(document).ready(() => {
                     $('<header>').addClass('section-header').append(
                         $('<section>').addClass('title-header').text(nav_bar_data[0]['title']),
                         $('<ul>').append(
-                            $.map(nav_bar_data[1]['link'], function (i) {
-                                return $('<li>').addClass('ul-li-header').text(i)
-                            })
+                            $.map(nav_bar_data[1]['link'], (i) => $('<li>').addClass('ul-li-header').text(i))
                         ),
                         $('<section>').addClass('container-btn').append(
-                            $.map(nav_bar_data[2]['cadastroBtn'], function (i) {
-                                return $('<button>').addClass('btn btn-5').text(i)
-                            })
+                            $.map(nav_bar_data[2]['cadastroBtn'], (i) => $('<button>').addClass('btn btn-5').text(i))
                         )
                     ),
 
@@ -53,9 +49,7 @@ $(document).ready(() => {
                         .addClass("section-text")
                         .append(
                             $("<div>").text(about_data[0]["title"]),
-                            $.map(about_data[1]["paragrafo"], function (i) {
-                                return $("<p>").text(i);
-                            }),
+                            $.map(about_data[1]["paragrafo"], (i) => $('<p>').text(i)),
                             $("<button>").text(about_data[2]["btn_CTA"])
                         )
                 ).appendTo("body");
@@ -79,11 +73,9 @@ $(document).ready(() => {
                                     $("<ul>")
                                         .addClass("splide__list")
                                         .append(
-                                            $.map(carousel_data[1]["collection_img"], function (i) {
-                                                return $("<li>")
+                                            $.map(carousel_data[1]["collection_img"], (i) => $("<li>")
                                                     .addClass("splide__slide")
-                                                    .append($("<img>").attr("src", i));
-                                            })
+                                                    .append($("<img>").attr("src", i)))
                                         )
                                 )
                         )
@@ -105,8 +97,7 @@ $(document).ready(() => {
                     $("<section>")
                         .addClass("card-container")
                         .append(
-                            $.map(produto_data[0]["collection_card"], function (i) {
-                                return $("<div>")
+                            $.map(produto_data[0]["collection_card"], (i) => $('<div>')
                                     .addClass("card")
                                     .append(
                                         $("<div>")
@@ -122,8 +113,8 @@ $(document).ready(() => {
                                                 $("<div>").addClass("card-title").text(i["title_card"]),
                                                 $('<div>').addClass('card-subtitle').text(i['subtitle_card'])
                                             )
-                                    );
-                            })
+                                    )
+                            )
                         ),
                     $("<section>")
                         .addClass("section-footer")
@@ -139,16 +130,15 @@ $(document).ready(() => {
             $('<section>').addClass('section-deploi').append(
                 $('<section>').addClass('title-section-deploi').text(depoimento_data[0]['title_deploi']),
                 $('<section>').addClass('content-deploi').append(
-                    $.map(depoimento_data[1]["collection_deploi"], function (i) {
-                        return $('<div>').addClass('deploi').append(
+                    $.map(depoimento_data[1]["collection_deploi"], (i) => $('<div>').addClass('deploi').append(
                             $('<img>').attr('src', i['image']),
                             $('<section>').addClass('info').append(
                                 $('<div>').addClass('name').text(i['name_person']),
                                 $('<div>').addClass('profission').text(i['profission']),
                                 $('<div>').addClass('text').text(i['deploi'])
-                            ),
+                            )
                         )
-                    })
+                    )
                 )
             ).appendTo('body');
 
@@ -158,12 +148,10 @@ $(document).ready(() => {
             $('<footer>').addClass('footer').append(
                 $('<div>').addClass('title-footer').text(footer_data[0]['titleFooter']),
                 $('<ul>').addClass('content-link').append(
-                    $.map(footer_data[1]['contentLink'], function (i) {
-                        return $('<li>').addClass('item').append(
+                    $.map(footer_data[1]['contentLink'], (i) => $('<li>').addClass('item').append(
                             $('<div>').text(i['li']),
                             $('<i>').addClass(i['icon'])
-                        )
-                    })
+                        ))
                 )
             ).appendTo('body');
         })

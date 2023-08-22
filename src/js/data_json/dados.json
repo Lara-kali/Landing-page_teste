@@ -4,17 +4,10 @@
       "title": "landing page"
     },
     {
-      "link": [
-        "home",
-        "show more",
-        "intro"
-      ]
+      "link": ["home", "show more", "intro"]
     },
     {
-      "cadastroBtn": [
-        "login",
-        "signup"
-      ]
+      "cadastroBtn": ["login", "signup"]
     }
   ],
   [
