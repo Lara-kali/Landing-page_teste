@@ -4,10 +4,17 @@
       "title": "landing page"
     },
     {
-      "link": ["home", "show more", "intro"]
+      "link": [
+        "home",
+        "show more",
+        "intro"
+      ]
     },
     {
-      "cadastroBtn": ["login", "signup"]
+      "cadastroBtn": [
+        "login",
+        "signup"
+      ]
     }
   ],
   [
@@ -42,7 +49,6 @@
       "btn_CTA": "Venha nos conhecer"
     }
   ],
-
   [
     {
       "title": "O Futuro no Seu Pulso: Conheça Nossos Relógios Inteligentes"
